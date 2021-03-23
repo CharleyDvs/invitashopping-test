@@ -54,7 +54,7 @@ function GroceryApp({ products }) {
 const Products = ({ products = [], onVoteAdd, onDownVote }) => {
   const sortedArray = products.sort((a, b) => b.votes - a.votes);
   return (
-    <ul>
+    <ul className="product-list">
       {sortedArray.map((product, index) => (
         <li key={`${product.name} - ${index}`}>
           {" "}
