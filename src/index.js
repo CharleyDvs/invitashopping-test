@@ -37,7 +37,6 @@ function GroceryApp({ products }) {
       return product;
     });
     setProductsList(newProductsList);
-    console.log("working");
   };
 
   return (
